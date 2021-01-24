@@ -1,0 +1,185 @@
+collections:
+  posts:
+    permalink: '/posts/:title/'
+sass:
+  type: config_sass
+  precision: 10
+  style: nested
+  indentWidth: 4
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - README.md
+  - netlify.toml
+  - stackbit-build.sh
+  - stackbit-pull.js
+plugins:
+  - jekyll-menus
+footer:
+  type: footer
+  links: []
+  nav_links:
+    - no_follow: false
+      type: action
+      icon_position: left
+      new_window: false
+      has_icon: false
+      style: link
+      url: /terms-of-service
+      label: Terms of Service
+    - no_follow: false
+      type: action
+      icon_position: left
+      new_window: false
+      has_icon: false
+      style: link
+      url: /privacy-policy
+      label: Privacy Policy
+  content: >-
+    &copy; Stackbit. All rights reserved. This Jamstack site was created with <a
+    href="https://www.stackbit.com/?utm_source=deployed-footer" target="_blank"
+    rel="noopener">Stackbit</a>. Create yours <a
+    href="https://app.stackbit.com/create?theme=azimuth&utm_source=deployed-footer"
+    target="_blank" rel="noopener">now</a>.
+  has_nav: true
+  sections:
+    - type: footer_text
+      content: Stackbit theme demo
+      image_url: /
+      image_alt: Footer logo
+      image: 'https://www.datocms-assets.com/40902/1610732410-logo-alt.svg'
+    - type: footer_nav
+      nav_links:
+        - no_follow: false
+          type: action
+          icon_position: left
+          new_window: false
+          has_icon: false
+          style: link
+          url: /about
+          label: About Us
+        - no_follow: false
+          type: action
+          icon_position: left
+          new_window: false
+          has_icon: false
+          style: link
+          url: /blog
+          label: Blog
+        - no_follow: false
+          type: action
+          icon_position: left
+          new_window: false
+          has_icon: false
+          style: link
+          url: /signup
+          label: Sign Up
+        - no_follow: false
+          type: action
+          icon_position: left
+          new_window: false
+          has_icon: false
+          style: link
+          url: /contact
+          label: Contact
+      title: Company
+    - type: footer_nav
+      nav_links:
+        - no_follow: false
+          type: action
+          icon_position: left
+          new_window: false
+          icon: twitter
+          has_icon: true
+          style: link
+          url: 'https://twitter.com/'
+          label: Twitter
+        - no_follow: false
+          type: action
+          icon_position: left
+          new_window: false
+          icon: linkedin
+          has_icon: true
+          style: link
+          url: 'https://www.linkedin.com/'
+          label: LinkedIn
+        - no_follow: false
+          type: action
+          icon_position: left
+          new_window: false
+          icon: github
+          has_icon: true
+          style: link
+          url: 'https://github.com/'
+          label: GitHub
+      title: Community
+    - submit_label: Subscribe
+      type: footer_form
+      form_fields:
+        - type: form_field
+          is_required: true
+          label: Email
+          name: email
+          default_value: Enter email address
+          input_type: email
+      form_id: contactForm
+      hide_labels: true
+      content: Stay up to date with our latest developments.
+      title: Subscribe
+header:
+  type: header
+  nav_links:
+    - no_follow: false
+      type: action
+      icon_position: left
+      new_window: false
+      has_icon: false
+      style: link
+      url: /
+      label: Home
+    - no_follow: false
+      type: action
+      icon_position: left
+      new_window: false
+      has_icon: false
+      style: link
+      url: /features
+      label: Features
+    - no_follow: false
+      type: action
+      icon_position: left
+      new_window: false
+      has_icon: false
+      style: link
+      url: /pricing
+      label: Pricing
+    - no_follow: false
+      type: action
+      icon_position: left
+      new_window: false
+      has_icon: false
+      style: link
+      url: /style-guide
+      label: Style Guide
+    - no_follow: false
+      type: action
+      icon_position: left
+      new_window: false
+      has_icon: false
+      style: primary
+      url: /signup
+      label: Sign Up
+  has_nav: true
+  logo_img_alt: Logo
+  logo_img: 'https://www.datocms-assets.com/40902/1610732410-logo.svg'
+base_font: nunito-sans
+palette: blue
+permalink: '/:title/'
+baseurl: /
+title: Azimuth
